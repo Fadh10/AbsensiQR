@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="absensiqr-app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Absensi QR</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css">
+
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script>
+        window.$ = window.jQuery = require('jquery');
+        window.Hammer = require('../node_modules/materialize-css/js/hammer.min.js');
+        require('materialize-css');
+    </script>
+    
+   
+</head>
+<body>
+    <div id="body" class="row">
+        <header>
+            <div class="panel col s10">Absensi QR </div>
+            <div class="option col s1" id="minimize"><i class="obutton Tiny material-icons">remove</i></div>
+            <div class="option col s1" id="close"><i class="obutton Tiny material-icons">close</i></div>
+        </header>
+        <div id="frame-content">
+            <div class="main-content">
+                <marquee><font color="red">    bait elek..</font></marquee> 
+                <script>
+                    <ng-view></ng-view>
+                   
+                    require('./js/routing.js');
+                </script>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

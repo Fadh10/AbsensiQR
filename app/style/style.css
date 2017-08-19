@@ -1,0 +1,71 @@
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../node_modules/materialize-css/dist/fonts/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal; 
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: #E2E2E2;
+}
+
+header{
+    height: 35px;
+    align-self: stretch;
+    background: #353535;
+}
+
+.panel{
+    -webkit-app-region: drag;
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.option{
+    color: white;
+    background: #353535;
+    height: 35px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.obutton{
+    margin-top: 10%;
+}
+
+.option:hover{
+    background: red;
+}
+
+#frame-content{
+    display: flex;
+    min-height: 90vh;
+}
+
+.main-content{
+    margin: auto;
+}
